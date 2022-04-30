@@ -24,3 +24,8 @@ git pull : es para actualizar tus archivos que tienes en tu compu porque en gith
 
 git reset --hard <commit de git log>
 git reset --hard origen/main : para regresar a la version que tienes en github
+
+git branch : te va a decir en que branch estas y cuales hay
+
+git checkout -b nombreDeBranch : para agregar otro branch }
+git checkout nombreDeBranch : para cambiar de branch
