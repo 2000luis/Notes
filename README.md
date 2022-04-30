@@ -23,4 +23,4 @@ git commit -am "nota": para agregar un commit a todos los archivo modificados si
 git pull : es para actualizar tus archivos que tienes en tu compu porque en github ya hubieron cambios a los archivos
 
 git reset --hard <commit de git log>
-git reset --hard origen/master : para regresar a la version que tienes en github
+git reset --hard origen/main : para regresar a la version que tienes en github
