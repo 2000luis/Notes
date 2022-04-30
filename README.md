@@ -19,3 +19,5 @@ desde git bash
 y para abrir la carpeta usar : code .
 
 git commit -am "nota": para agregar un commit a todos los archivo modificados sin la necesidad de hacer un git add
+  
+git pull : es para actualizar tus archivos que tienes en tu compu porque en github ya hubieron cambios a los archivos
