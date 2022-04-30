@@ -17,3 +17,5 @@ bueno lo primero que aprendi fue el crear nuevos archivos   : touch <nombreDileA
 desde git bash 
 
 y para abrir la carpeta usar : code .
+
+git commit -am "nota": para agregar un commit a todos los archivo modificados sin la necesidad de hacer un git add
