@@ -9,6 +9,8 @@ para copear un repositorio
 git add <nombre de el archivo modificado>
 git commit -m 'checkmark what happened' 
 
+git log : es para ver todos los commit que has echo en esta carpeta
+
 git status : para ver el status de loque esta modificado 
 
 bueno lo primero que aprendi fue el crear nuevos archivos   : touch <nombreDileArchivo.TipoDeArchivo> eje. style.html
