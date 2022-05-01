@@ -24,6 +24,16 @@ else:
 nombre = "harry"
 print(nombre[0])
 
+# list en python
 names= ["harry", "ron"]
 print(names)
 print(names[0])
+
+# esto agrega otro cosa a la lista
+names.append("Draco")
+names.append(8)
+
+# esto sortea los objetos en la lista en orden alfabeticamente
+#names.sort()
+# para que sorte la lista debe de ser puros str
+print(names)
