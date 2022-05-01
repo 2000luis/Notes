@@ -17,10 +17,15 @@ set: una collection de valores unicos
 s = set()
 
 #Agregamos valores a ese set 
+
 print()
+
 s.add(1)
+
 s.add(2)
+
 s.add(3)
+
 #Si agregamos otro tres no aparecera en el set porque no se pueden repetir valores en un set
 s.add(3)
 s.add("hola")
@@ -32,7 +37,7 @@ print(s)
 s.remove(3)
 print(s)
 
-# Y para determinar cuantos elementos hay en el set o en cualquier cosa 
+#Y para determinar cuantos elementos hay en el set o en cualquier cosa 
 
 #len(s)
 
