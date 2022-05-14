@@ -30,3 +30,12 @@ git branch : te va a decir en que branch estas y cuales hay
 git checkout -b nombreDeBranch : para agregar otro branch 
 
 git checkout nombreDeBranch : para cambiar de branch
+
+
+mkdir : para hacer carpeta 
+
+rm : para elminar archivo
+
+rm -r elminar carpeta
+
+cat : para ver lo que hay adentro
