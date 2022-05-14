@@ -12,7 +12,7 @@ personas=[
 
 
 #la lambda es lo mismo que si escribiera lo de lambda
- 
+
 personas.sort(key=lambda person: person["sexo"])
 
 print(personas)
