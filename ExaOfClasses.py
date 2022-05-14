@@ -11,9 +11,7 @@ class Flight():
 #pero si hay asientos se agrega el nombre que insertas en esta funcion y despues deuelve un true
     def añadir_pasajero(self, name):
         if not self.asientos_disponibes():
-            print("_____________________________________________")
-            print("Sin asientos disponibles")
-            
+            print()
             return False
         self.pasajeros.append(name)
         return True
