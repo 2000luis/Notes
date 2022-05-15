@@ -38,4 +38,4 @@ rm : para elminar archivo
 
 rm -r elminar carpeta
 
-cat : para ver lo que hay adentro
+cat : para ver lo que hay adentro 
