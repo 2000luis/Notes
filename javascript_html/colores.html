@@ -9,17 +9,18 @@
 
     <script>
 
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', () => {
 
-            document.querySelector('#red').onclick = function () {
-                document.querySelector('#hello').style.color = 'red';
-            }
-            document.querySelector('#blue').onclick = function () {
-                document.querySelector('#hello').style.color = 'blue';
-            }
-            document.querySelector('#green').onclick = function () {
-                document.querySelector('#hello').style.color = 'green';
-            }
+            //querySelectorAll te ayuda encontrar un grupo de elementos poder realizar algo con ellos usando el forEach 
+            //Y con esa propiedad puedes realizar un funcion con cada uno de esos elementos
+            document.querySelectorAll('button').forEach(button => {
+                //En esta funcion se pasara un argumento que es el button que fue presionado y se usara esos elementos de este botton para darle otras instrucciones 
+                button.onclick = () => {
+                    //aqui ya indicamos que eslo que se va a realizar ya cuando alla sido presionado el botton y indicamos que un elemento con el id de hello vamos a cambiarle el color accesando la data de este boton 
+                    document.querySelector('#hello').style.color = button.dataset.colores;
+                    // en el boton se escribio data-colores y aqui se pone un dataset.colores para identificar es rasgo de ese boton
+                }
+            });
 
         });
     </script>
@@ -27,9 +28,9 @@
 
 <body>
     <h1 id="hello">Hello!</h1>
-    <button id="red">red</button>
-    <button id="blue">blue</button>
-    <button id="green">green</button>
+    <button data-colores="red">red</button>
+    <button data-colores="blue">blue</button>
+    <button data-colores="green">green</button>
 </body>
 
 </html>
