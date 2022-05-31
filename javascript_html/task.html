@@ -11,6 +11,17 @@
 
         document.addEventListener('DOMContentLoaded', () => {
 
+            const dis = document.querySelector('#submit')
+            dis.disabled = true;
+
+            document.querySelector('#tarea').onkeyup = () => {
+                if (document.querySelector('#tarea').value.length > 0) {
+                    dis.disabled = false;
+                } else {
+                    dis.disabled = true;
+                }
+            }
+
             document.querySelector('form').onsubmit = () => {
                 const tasks = document.querySelector('#tarea').value;
 
@@ -19,10 +30,12 @@
 
                 document.querySelector('#tasks').append(lista);
 
+                document.querySelector('#tarea').value = '';
+                dis.disabled = true;
+
                 //Stop from submitting
                 return false;
             }
-
         });
 
     </script>
@@ -35,7 +48,7 @@
     </ul>
     <form>
         <input id="tarea" placeholder="New Task" type="text">
-        <input type="submit">
+        <input id="submit" type="submit">
     </form>
 </body>
 
