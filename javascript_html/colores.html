@@ -11,16 +11,10 @@
 
         document.addEventListener('DOMContentLoaded', () => {
 
-            //querySelectorAll te ayuda encontrar un grupo de elementos poder realizar algo con ellos usando el forEach 
-            //Y con esa propiedad puedes realizar un funcion con cada uno de esos elementos
-            document.querySelectorAll('button').forEach(button => {
-                //En esta funcion se pasara un argumento que es el button que fue presionado y se usara esos elementos de este botton para darle otras instrucciones 
-                button.onclick = () => {
-                    //aqui ya indicamos que eslo que se va a realizar ya cuando alla sido presionado el botton y indicamos que un elemento con el id de hello vamos a cambiarle el color accesando la data de este boton 
-                    document.querySelector('#hello').style.color = button.dataset.colores;
-                    // en el boton se escribio data-colores y aqui se pone un dataset.colores para identificar es rasgo de ese boton
-                }
-            });
+            document.querySelector('select').onchange = function () {
+                // aqui la funcion no se puede escribir () => porque solo se puede hacer cuando es parametro dentro de parencesis 
+                document.querySelector('#hello').style.color = this.value;
+            }
 
         });
     </script>
@@ -28,9 +22,12 @@
 
 <body>
     <h1 id="hello">Hello!</h1>
-    <button data-colores="red">red</button>
-    <button data-colores="blue">blue</button>
-    <button data-colores="green">green</button>
+    <select>
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
 </body>
 
 </html>
